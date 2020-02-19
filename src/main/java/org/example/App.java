@@ -12,7 +12,7 @@ public class App {
 
         int[] randomNumbers = IntStream.generate(
                                 () -> ThreadLocalRandom.current().nextInt(0, 10000 + 1))
-                                        .limit(100)
+                                        .limit(120)
                                         .boxed()
                                         .mapToInt(i -> i)
                                         .toArray();
